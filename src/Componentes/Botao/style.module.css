@@ -1,6 +1,6 @@
 .botao {
-    width: calc((100% / 6) - 1em);
-    padding: .5em 1.5em;
+    width: 150px;
+    padding: 1em;
     box-sizing: border-box;
     text-transform: capitalize;
     background-color: var(--cinza);
@@ -10,11 +10,13 @@
     gap: 5px;
     font-weight: bold;
     cursor: pointer;
-    border: none
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
 }
 
 .imagem {
-    width: 15px;
+    width: 20px;
     height: auto;
 }
 

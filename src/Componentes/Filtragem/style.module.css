@@ -6,5 +6,26 @@
 .container_botoes {
     display: flex;
     justify-content: space-between;
+}
 
+.cardapio {
+    padding: 3em 0;
+}
+
+.titulo {
+    text-align: center;
+    font-family: var(--fonte-dancing);
+    text-transform: capitalize;
+    color: var(--destaque);
+    font-size: 32px;
+}
+
+.conteudo {
+    margin: 1em 0;
+    padding: 20px;
+    background-color: var(--cinza);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
 }

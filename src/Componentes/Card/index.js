@@ -10,17 +10,22 @@ const Card = (props) => {
 
             <div className={style.subcontainer}>
 
-                <h3 className={style.nome}>{props.nome}</h3>
+                <div className={style.container_descricao}>
 
-                <p className={style.categoria}>{props.categoria}</p>
+                    <h3 className={style.nome}>{props.nome}</h3>
 
-                <p className={style.descricao}>{props.descricao}</p>
+                    <p className={style.categoria}>{props.categoria}</p>
+
+                    <p className={style.descricao}>{props.descricao}</p>
+
+                </div>
 
                 <p className={style.preco}>
                     {`R$ ${String(
                         props.preco.toFixed(2)
                     ).replace('.', ',')}`}
                 </p>
+
 
             </div>
 
