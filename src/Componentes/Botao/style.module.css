@@ -1,0 +1,23 @@
+.botao {
+    width: calc((100% / 6) - 1em);
+    padding: .5em 1.5em;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    background-color: var(--cinza);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none
+}
+
+.imagem {
+    width: 15px;
+    height: auto;
+}
+
+.botao:hover {
+    background-color: var(--destaque);
+}

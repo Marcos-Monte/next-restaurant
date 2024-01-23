@@ -1,0 +1,29 @@
+.container {
+    width: 250px;
+    border: 1px solid var(--destaque);
+}
+
+.imagem {
+    height: 250px;
+    width: 100%;
+}
+
+.subcontainer {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .5em
+}
+
+.categoria {
+    color: var(--destaque);
+}
+
+.descricao {
+    line-height: 1.5em;
+}
+
+.preco {
+    text-align: end;
+}
