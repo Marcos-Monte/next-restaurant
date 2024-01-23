@@ -1,4 +1,3 @@
-import agua from "/public/img/agua.jpg";
 import aligot from "/public/img/aligot.jpg";
 import banoffee from "/public/img/banoffee.png";
 import bifeAncho from "/public/img/bife-ancho.jpg";
@@ -8,7 +7,6 @@ import carpaccio from "/public/img/carpaccio.jpg";
 import cerveja from "/public/img/cerveja.jpg";
 import cheesecake from "/public/img/cheesecake.jpg";
 import ebiSpicy from "/public/img/ebi-spicy.jpg";
-import espaguete from "/public/img/espaguete.jpg";
 import fileMignon from "/public/img/file-mignon.jpg";
 import lasanha from "/public/img/lasanha.jpg";
 import milFolhas from "/public/img/mil-folhas.jpg";
@@ -37,7 +35,7 @@ export const produtos = [
     preco: 20.0,
     descricao:
       "Um delicioso espaguete que pode ser combinado com diversos molhos, como bolonhesa, carbonara, alho e oleo e pesto",
-    imagem: espaguete,
+    imagem: "/img/espaguete.jpg"
   },
   {
     id: 2,
@@ -252,7 +250,7 @@ export const produtos = [
     categoria: "Bebidas",
     preco: 4.99,
     descricao: "Água mineral saborizada com limão siciliano",
-    imagem: agua,
+    imagem: "/img/agua.jpg",
   },
   {
     id: 26,
