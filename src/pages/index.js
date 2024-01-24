@@ -5,7 +5,7 @@ import Head from "next/head";
 // import Card from "@/Componentes/Card";
 // import { produtos } from "@/Data/data-produtos";
 import Banner from "@/Componentes/Banner";
-import Filtragem from "@/Componentes/Filtragem";
+import Cardapio from "@/Componentes/Cardapio";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +25,7 @@ export default function Home() {
 
         <Banner />
 
-        <Filtragem />
+        <Cardapio />
 
       </main>
     </>

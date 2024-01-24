@@ -14,7 +14,7 @@ import ImagemSobremesas from '/public/Assets/sobremesa.png';
 
 import { produtos } from '@/Data/data-produtos';
 
-export default function Filtragem() {
+export default function Cardapio() {
 
     const categorias = [
         { categoria: 'Entradas', imagem: ImagemEntrada },
