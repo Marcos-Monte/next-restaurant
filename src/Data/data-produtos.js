@@ -300,3 +300,19 @@ export const produtos = [
     imagem: saladaNicoise,
   },
 ];
+
+import ImagemBebidas from '/public/Assets/bebidas.png';
+import ImagemCarnes from '/public/Assets/carne.png';
+import ImagemEntrada from '/public/Assets/entrada.png';
+import ImagemMassas from '/public/Assets/massa.png';
+import ImagemSaladas from '/public/Assets/salada.png';
+import ImagemSobremesas from '/public/Assets/sobremesa.png';
+
+export const categorias = [
+  { categoria: 'Entradas', imagem: ImagemEntrada },
+  { categoria: 'Massas', imagem: ImagemMassas },
+  { categoria: 'Carnes', imagem: ImagemCarnes },
+  { categoria: 'Bebidas', imagem: ImagemBebidas },
+  { categoria: 'Saladas', imagem: ImagemSaladas },
+  { categoria: 'Sobremesas', imagem: ImagemSobremesas }
+]

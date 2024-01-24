@@ -33,3 +33,11 @@
     gap: 40px;
     justify-content: space-between;
 }
+
+/* Medias */
+
+@media screen and (max-width: 450px) {
+    .cardapio {
+        padding: 3em 0;
+    }
+}

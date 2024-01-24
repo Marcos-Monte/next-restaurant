@@ -5,36 +5,19 @@ import style from './style.module.css';
 import Botao from '../Botao';
 import Card from '../Card';
 
-import ImagemBebidas from '/public/Assets/bebidas.png';
-import ImagemCarnes from '/public/Assets/carne.png';
-import ImagemEntrada from '/public/Assets/entrada.png';
-import ImagemMassas from '/public/Assets/massa.png';
-import ImagemSaladas from '/public/Assets/salada.png';
-import ImagemSobremesas from '/public/Assets/sobremesa.png';
-
-import { produtos } from '@/Data/data-produtos';
+import { filtrarProdutos, retornarCategorias } from '@/Services';
 
 export default function Cardapio() {
 
-    const categorias = [
-        { categoria: 'Entradas', imagem: ImagemEntrada },
-        { categoria: 'Massas', imagem: ImagemMassas },
-        { categoria: 'Carnes', imagem: ImagemCarnes },
-        { categoria: 'Bebidas', imagem: ImagemBebidas },
-        { categoria: 'Saladas', imagem: ImagemSaladas },
-        { categoria: 'Sobremesas', imagem: ImagemSobremesas }
-    ]
+    const categorias = retornarCategorias();
 
-    const [listaProdutos, setListaProdutos] = useState(produtos);
+    const listaEntrada = filtrarProdutos('Entradas');
+
+    const [listaProdutos, setListaProdutos] = useState(listaEntrada);
 
     const handleFiltrarProdutos = (categoria) => {
 
-        setListaProdutos(
-            produtos.filter(
-                (produto) => produto.categoria === categoria
-            )
-
-        )
+        setListaProdutos(filtrarProdutos(categoria))
     }
 
     return (

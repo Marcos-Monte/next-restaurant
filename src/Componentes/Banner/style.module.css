@@ -28,5 +28,17 @@
     font-family: var(--fonte-dancing);
     color: var(--destaque);
     font-size: 24px;
-    width: 400px
+    width: 40%
+}
+
+/* Medias */
+
+@media screen and (max-width: 650px) {
+    .conteudo {
+        width: 80%;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
 }

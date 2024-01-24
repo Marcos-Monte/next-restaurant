@@ -20,6 +20,17 @@
     height: auto;
 }
 
-.botao:hover {
+/* Hover, etc */
+
+.botao:hover,
+.botao:focus {
     background-color: var(--destaque);
+}
+
+
+/* Medias */
+@media screen and (max-width: 320px) {
+    .botao {
+        width: 80%;
+    }
 }

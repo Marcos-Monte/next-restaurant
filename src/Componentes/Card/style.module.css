@@ -5,12 +5,14 @@
     box-sizing: border-box;
     border-radius: 10px;
     flex: 1 2 auto;
+    opacity: .7;
 }
 
 .imagem {
     height: 250px;
     width: 100%;
     border-radius: 10px 10px 0 0;
+
 }
 
 .subcontainer {
@@ -36,4 +38,10 @@
 .preco {
     font-weight: bold;
     text-align: end;
+}
+
+/* Hover */
+.container:hover {
+    background-color: var(--branco);
+    opacity: 1;
 }
