@@ -22,4 +22,14 @@ export const listaEntrada = (produtos) => {
 }
 
 
+//Função para buscar texto dentro de alguma propriedade do objeto de uma coleção
+export const buscarProdutos = (texto) => {
+    return produtos.filter(
+        (produto) =>
+            produto.nome.toLowerCase().includes(texto.toLowerCase()) ||
+            produto.categoria.toLowerCase().includes(texto.toLowerCase())
+    )
+}
+
+
 

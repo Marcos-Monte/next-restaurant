@@ -1,6 +1,6 @@
 .botao {
     width: 150px;
-    padding: 1em;
+    padding: 10px 0;
     box-sizing: border-box;
     text-transform: capitalize;
     background-color: var(--cinza);
@@ -15,6 +15,10 @@
     font-size: 10px;
 }
 
+.destacado {
+    background-color: var(--destaque);
+}
+
 .imagem {
     width: 20px;
     height: auto;
@@ -26,7 +30,6 @@
 .botao:focus {
     background-color: var(--destaque);
 }
-
 
 /* Medias */
 @media screen and (max-width: 320px) {

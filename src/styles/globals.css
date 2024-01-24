@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--fonte-poppins);
 }
 
 :root {
@@ -9,7 +10,7 @@
   --fonte-poppins: 'Poppins', sans-serif;
   --destaque: #daa520;
   --branco: #fff;
-  --cinza: #f3f0f0;
+  --cinza: #f3f3f3;
   --preto: #000000;
 }
 

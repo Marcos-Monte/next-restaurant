@@ -4,8 +4,9 @@ import style from './style.module.css';
 
 import Botao from '../Botao';
 import Card from '../Card';
+import Input from '../Input';
 
-import { filtrarProdutos, retornarCategorias } from '@/Services';
+import { buscarProdutos, filtrarProdutos, retornarCategorias } from '@/Services';
 
 export default function Cardapio() {
 
@@ -14,13 +15,21 @@ export default function Cardapio() {
     const listaEntrada = filtrarProdutos('Entradas');
 
     const [listaProdutos, setListaProdutos] = useState(listaEntrada);
+    const [textoBusca, settextoBusca] = useState('');
+
 
     const handleFiltrarProdutos = (categoria) => {
-
         setListaProdutos(filtrarProdutos(categoria))
     }
 
+    const handleBuscarProdutos = (textoUsuario) => {
+        settextoBusca(textoUsuario)
+
+        textoUsuario.length >= 3 ? setListaProdutos(buscarProdutos(textoUsuario)) : setListaProdutos(listaEntrada)
+    }
+
     return (
+
         <section className={`${style.secao} limitar-tela`}>
 
             <div className={style.container_botoes}>
@@ -30,12 +39,20 @@ export default function Cardapio() {
 
                         < Botao key={index}
                             funcao={handleFiltrarProdutos}
-                            categoria={categoria.categoria} imagem={categoria.imagem} />
+                            categoria={categoria.categoria}
+                            imagem={categoria.imagem}
+                        />
 
                     )
                     )
 
                 }
+
+                <Input
+                    funcao={handleBuscarProdutos}
+                    value={textoBusca}
+                />
+
             </div>
 
             <div className={style.cardapio}>

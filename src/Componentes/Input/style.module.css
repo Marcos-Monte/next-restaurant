@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2em;
+    border: 2px solid;
+    border-radius: 25px;
+    color: var(--cinza);
+    padding: .7em;
+}
+
+.imagem {
+    width: 20px;
+    height: auto;
+}
+
+.campo {
+    width: 100%;
+    border: none;
+    padding-left: .5em;
+    outline: none;
+    background-color: transparent;
+}
+
+.container:hover {
+    background-color: var(--cinza);
+    color: var(--destaque)
+}
+
+.campo:hover::placeholder {
+    color: var(--destaque)
+}

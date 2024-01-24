@@ -6,6 +6,8 @@
     border-radius: 10px;
     flex: 1 2 auto;
     opacity: .7;
+    color: var(--preto);
+    padding-bottom: 20px;
 }
 
 .imagem {
@@ -17,11 +19,13 @@
 
 .subcontainer {
     height: 230px;
+    width: 100%;
     padding: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px
 }
 
 

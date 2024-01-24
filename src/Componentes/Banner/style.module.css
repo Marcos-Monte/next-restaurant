@@ -16,7 +16,6 @@
 
 .titulo {
     margin-top: 2em;
-    font-family: var(--fonte-poppins);
     text-transform: uppercase;
     color: var(--branco);
     font-weight: 600;
