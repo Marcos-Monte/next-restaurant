@@ -1,31 +1,33 @@
-import aligot from "/public/img/aligot.jpg";
-import banoffee from "/public/img/banoffee.png";
-import bifeAncho from "/public/img/bife-ancho.jpg";
-import bruschetta from "/public/img/bruschetta.jpg";
-import capeletti from "/public/img/capeletti.jpg";
-import carpaccio from "/public/img/carpaccio.jpg";
-import cerveja from "/public/img/cerveja.jpg";
-import cheesecake from "/public/img/cheesecake.jpg";
-import ebiSpicy from "/public/img/ebi-spicy.jpg";
-import fileMignon from "/public/img/file-mignon.jpg";
-import lasanha from "/public/img/lasanha.jpg";
-import milFolhas from "/public/img/mil-folhas.jpg";
-import nhoque from "/public/img/nhoque.jpg";
-import paella from "/public/img/paella.jpg";
-import picanha from "/public/img/picanha.png";
-import primeRib from "/public/img/prime-rib.jpg";
-import pudim from "/public/img/pudim.jpg";
-import ravioli from "/public/img/ravioli.jpg";
-import refrigerante from "/public/img/refrigerante.jpg";
-import saladaCaprese from "/public/img/salada-caprese.jpg";
-import saladaCeasar from "/public/img/salada-ceasar.jpg";
-import saladaGrega from "/public/img/salada-grega.jpg";
-import saladaNicoise from "/public/img/salada-nicoise.jpg";
-import saladaWaldorf from "/public/img/salada-waldorf.jpg";
-import suco from "/public/img/suco.jpg";
-import tiramisu from "/public/img/tiramisu.jpg";
-import tomahwankSteak from "/public/img/tomahawk-steak.jpg";
-import whiskey from "/public/img/whiskey.jpg";
+import agua from '../../public/Img/agua.jpg';
+import aligot from "../../public/Img/aligot.jpg";
+import banoffee from "../../public/Img/banoffee.png";
+import bifeAncho from "../../public/Img/bife-ancho.jpg";
+import bruschetta from "../../public/Img/bruschetta.jpg";
+import capeletti from "../../public/Img/capeletti.jpg";
+import carpaccio from "../../public/Img/carpaccio.jpg";
+import cerveja from "../../public/Img/cerveja.jpg";
+import cheesecake from "../../public/Img/cheesecake.jpg";
+import ebiSpicy from "../../public/Img/ebi-spicy.jpg";
+import espaguete from '../../public/Img/espaguete.jpg';
+import fileMignon from "../../public/Img/file-mignon.jpg";
+import lasanha from "../../public/Img/lasanha.jpg";
+import milFolhas from "../../public/Img/mil-folhas.jpg";
+import nhoque from "../../public/Img/nhoque.jpg";
+import paella from "../../public/Img/paella.jpg";
+import picanha from "../../public/Img/picanha.png";
+import primeRib from "../../public/Img/prime-rib.jpg";
+import pudim from "../../public/Img/pudim.jpg";
+import ravioli from "../../public/Img/ravioli.jpg";
+import refrigerante from "../../public/Img/refrigerante.jpg";
+import saladaCaprese from "../../public/Img/salada-caprese.jpg";
+import saladaCeasar from "../../public/Img/salada-ceasar.jpg";
+import saladaGrega from "../../public/Img/salada-grega.jpg";
+import saladaNicoise from "../../public/Img/salada-nicoise.jpg";
+import saladaWaldorf from "../../public/Img/salada-waldorf.jpg";
+import suco from "../../public/Img/suco.jpg";
+import tiramisu from "../../public/Img/tiramisu.jpg";
+import tomahwankSteak from "../../public/Img/tomahawk-steak.jpg";
+import whiskey from "../../public/Img/whiskey.jpg";
 
 export const produtos = [
   {
@@ -35,7 +37,7 @@ export const produtos = [
     preco: 20.0,
     descricao:
       "Um delicioso espaguete que pode ser combinado com diversos molhos, como bolonhesa, carbonara, alho e oleo e pesto",
-    imagem: "/img/espaguete.jpg"
+    imagem: espaguete,
   },
   {
     id: 2,
@@ -250,7 +252,7 @@ export const produtos = [
     categoria: "Bebidas",
     preco: 4.99,
     descricao: "Água mineral saborizada com limão siciliano",
-    imagem: "/img/agua.jpg",
+    imagem: agua,
   },
   {
     id: 26,
