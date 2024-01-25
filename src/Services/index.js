@@ -31,5 +31,30 @@ export const buscarProdutos = (texto) => {
     )
 }
 
+//Função que verifica um tamanho minimo de uma String antes de procurar se ela existe dentro do banco de Dados
+export const limitarCaracteres = (texto, lista) => {
+    return texto.length > 2 ? buscarProdutos(texto) : lista
+}
 
+// Importando componente 'Card' para usar na proxima função
+import Card from '@/Componentes/Card';
 
+//Função que verifica se uma lista é maior que zero. Se for imprimir os elementos da lista, senão dar mensagem indicada
+export const mostrarCardLista = (lista) => {
+    return lista.length > 0 ?
+
+        lista.map(
+            (produto) => (
+                <Card
+                    key={produto.id}
+                    nome={produto.nome}
+                    imagem={produto.imagem}
+                    categoria={produto.categoria}
+                    descricao={produto.descricao}
+                    preco={produto.preco}
+                />
+            )
+        ) :
+
+        (<p>Nenhum produto encontrado</p>)
+}

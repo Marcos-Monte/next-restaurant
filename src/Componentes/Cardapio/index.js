@@ -3,10 +3,9 @@ import { useState } from 'react';
 import style from './style.module.css';
 
 import Botao from '../Botao';
-import Card from '../Card';
 import Input from '../Input';
 
-import { buscarProdutos, filtrarProdutos, retornarCategorias } from '@/Services';
+import { filtrarProdutos, limitarCaracteres, mostrarCardLista, retornarCategorias } from '@/Services';
 
 export default function Cardapio() {
 
@@ -20,12 +19,14 @@ export default function Cardapio() {
 
     const handleFiltrarProdutos = (categoria) => {
         setListaProdutos(filtrarProdutos(categoria))
+        settextoBusca('')
     }
 
     const handleBuscarProdutos = (textoUsuario) => {
         settextoBusca(textoUsuario)
 
-        textoUsuario.length >= 3 ? setListaProdutos(buscarProdutos(textoUsuario)) : setListaProdutos(listaEntrada)
+        setListaProdutos(limitarCaracteres(textoUsuario, listaEntrada))
+
     }
 
     return (
@@ -63,18 +64,9 @@ export default function Cardapio() {
 
 
                     {
-                        listaProdutos.map(
-                            (produto) => (
-                                <Card
-                                    key={produto.id}
-                                    nome={produto.nome}
-                                    imagem={produto.imagem}
-                                    categoria={produto.categoria}
-                                    descricao={produto.descricao}
-                                    preco={produto.preco}
-                                />
-                            )
-                        )
+
+                        mostrarCardLista(listaProdutos)
+
                     }
 
                 </div>

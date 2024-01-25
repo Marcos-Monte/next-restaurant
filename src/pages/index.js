@@ -2,6 +2,7 @@ import style from "@/styles/Home.module.css";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 
+
 import Banner from "@/Componentes/Banner";
 import Cardapio from "@/Componentes/Cardapio";
 
@@ -29,7 +30,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV1aa4MXV0Co6Zvwn7vKQDgAFcsEERbT2WaQwvpdf5Gg&s" />
       </Head>
 
       <main className={`${style.main} ${inter.className} ${style[estilo ? darkMode : lightMode]}`}>
