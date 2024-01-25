@@ -12,6 +12,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    gap: .5em
 }
 
 .titulo {
@@ -28,6 +29,20 @@
     color: var(--destaque);
     font-size: 24px;
     width: 40%
+}
+
+.botao_estilo {
+    margin-top: 1em;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+}
+
+/* Hover */
+.botao_estilo:hover {
+    background-color: var(--destaque);
+    color: var(--branco)
 }
 
 /* Medias */

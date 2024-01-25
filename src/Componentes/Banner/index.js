@@ -1,6 +1,6 @@
 import style from './style.module.css';
 
-const Banner = () => {
+const Banner = (props) => {
     return (
         <section className={`${style.container} limitar-tela`}>
 
@@ -10,6 +10,8 @@ const Banner = () => {
                 <p className={style.conteudo}>
                     De pratos clássicos a criações surpreendentes, nosso cardápio é um requinte de sabores refinados
                 </p>
+
+                <button className={style.botao_estilo} onClick={props.funcao}>Trocar Estilo</button>
 
             </div>
 

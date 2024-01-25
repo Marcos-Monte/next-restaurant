@@ -1,0 +1,15 @@
+.light {
+    --destaque: #daa520;
+    --branco: #fff;
+    --cinza: #f3f3f3;
+    --preto: #000000;
+    --fundo: #fff;
+}
+
+.dark {
+    --destaque: #daa520;
+    --branco: #fff;
+    --cinza: #f3f3f3;
+    --preto: #000000;
+    --fundo: #252525;
+}

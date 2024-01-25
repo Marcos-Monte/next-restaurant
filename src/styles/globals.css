@@ -8,10 +8,6 @@
 :root {
   --fonte-dancing: "Dancing Script", cursive;
   --fonte-poppins: 'Poppins', sans-serif;
-  --destaque: #daa520;
-  --branco: #fff;
-  --cinza: #f3f3f3;
-  --preto: #000000;
 }
 
 .limitar-tela {
@@ -21,4 +17,13 @@
 
 main {
   min-width: 280px;
+  background-color: var(--fundo);
 }
+
+/* Teste */
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
