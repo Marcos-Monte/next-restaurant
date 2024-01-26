@@ -46,9 +46,9 @@ npm run dev
 
 <h3>Prerequisites</h3>
 
-- [NextJS](https://nextjs.org/)
-- [NodeJS](https://nodejs.org/en)
-- [Git 2](https://git-scm.com/)
+- Framework React: [NextJS](https://nextjs.org/)
+- Ambiente JavaScrip: [NodeJS](https://nodejs.org/en)
+- Controle de Versão: [Git](https://git-scm.com/)
 
 <h3>Cloning</h3>
 
