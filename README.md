@@ -1,40 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center" style="font-weight: bold;">Interactive Menu Page 💻</h1>
 
-## Getting Started
+<p align="center">
+ <a href="#layout">Layout</a> • 
+ <a href="#tech">Technologies</a> • 
+ <a href="#started">Getting Started</a>
+</p>
 
-First, run the development server:
+<p align="center">
+    <b>The project consists of an interactive menu page, designed to provide users with a dynamic experience when exploring different categories of dishes, such as starters, pastas, drinks, etc. Interactivity is enhanced by the following functionalities:</b>
+</p>
+
+- Dynamic Navigation by Categories:<p align="start">Users can explore the various categories of dishes dynamically, adjusting the content of the page based on their actions.</b>
+</p>
+
+- Search by Name:<p align="start">A search box allows users to search by name. The search is triggered automatically from the third letter entered, providing a quick and efficient response.</b>
+</p>
+
+- Customizable Theme Mode:<p align="start">Users can customize the visual experience by switching between Dark Mode and Light Mode to suit their preferences.</b>
+</p>
+
+<p align="center">
+     <a href="https://next-restaurant-ecru.vercel.app/">📱 Visit this Project</a>
+</p>
+
+<h2 id="layout">🎨 Layout</h2>
+
+<p align="center">
+    <img src="public\Layouts do projeto\LayoutLightMode.png" alt="Layout Light Mode" width="400px" height="600px">
+    <img src="public\Layouts do projeto\LayoutDarkMode.png" alt="Layout Dark Mode" width="400px" height="600px">
+</p>
+
+<h2 id="tech">💻 Technologies</h2>
+
+- Next.js
+- React.js
+- JavaScript
+- Git / Github
+
+
+<h2 id="started">🚀 Getting started</h2>
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h3>Prerequisites</h3>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- [NextJS](https://nextjs.org/)
+- [NodeJS](https://nodejs.org/en)
+- [Git 2](https://git-scm.com/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<h3>Cloning</h3>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+How to clone the project
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+git clone https://github.com/Marcos-Monte/next-restaurant
+```
 
-## Learn More
+<h3>Starting</h3>
 
-To learn more about Next.js, take a look at the following resources:
+How to start the project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+cd next-restaurant
+npm run dev
+```
+<h3>Address</h3>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+How to access the project in the browser
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+http://http://localhost:3000/
+```
