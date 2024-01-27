@@ -3,23 +3,23 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 
 
-import Banner from "@/Componentes/Banner";
+// import Banner from "@/Componentes/Banner";
 import Cardapio from "@/Componentes/Cardapio";
 
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 
-  const lightMode = 'light';
-  const darkMode = 'dark'
+  // const lightMode = 'light';
+  // const darkMode = 'dark'
 
-  const [estilo, setEstilo] = useState(false);
+  // const [estilo, setEstilo] = useState(false);
 
-  function handleMudarEstilo() {
-    setEstilo(!estilo)
-  }
+  // function handleMudarEstilo() {
+  //   setEstilo(!estilo)
+  // }
 
   return (
     <>
@@ -33,11 +33,12 @@ export default function Home() {
         <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV1aa4MXV0Co6Zvwn7vKQDgAFcsEERbT2WaQwvpdf5Gg&s" />
       </Head>
 
-      <main className={`${style.main} ${inter.className} ${style[estilo ? darkMode : lightMode]}`}>
+      <main className={`${style.main} ${inter.className} `}>
+        {/* ${style[estilo ? darkMode : lightMode]} */}
 
-        <Banner
+        {/* <Banner
           funcao={handleMudarEstilo}
-        />
+        /> */}
 
         <Cardapio />
 

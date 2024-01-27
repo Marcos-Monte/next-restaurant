@@ -15,8 +15,6 @@ const Banner = (props) => {
 
             </div>
 
-
-
         </section>
     )
 }

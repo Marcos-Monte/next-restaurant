@@ -15,15 +15,25 @@
   margin: 0 auto;
 }
 
-main {
+.App {
   min-width: 280px;
   background-color: var(--fundo);
 }
 
-/* Teste */
+/* Temas */
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
+.light {
+  --destaque: #daa520;
+  --branco: #fff;
+  --cinza: #f3f3f3;
+  --preto: #000000;
+  --fundo: #fff;
+}
+
+.dark {
+  --destaque: #daa520;
+  --branco: #fff;
+  --cinza: #f3f3f3;
+  --preto: #000000;
+  --fundo: #252525;
+}

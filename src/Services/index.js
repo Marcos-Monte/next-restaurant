@@ -58,3 +58,20 @@ export const mostrarCardLista = (lista) => {
 
         (<p>Nenhum produto encontrado</p>)
 }
+
+
+// Importando biblioteca (react) para mudança de 'tema': createContext
+import { createContext } from 'react';
+
+// 
+export const TemaContexto = createContext(
+    {
+        tema: false,
+        trocarTema: () => { },
+    }
+);
+
+export const TemaProvedor = TemaContexto.Provider;
+
+
+
