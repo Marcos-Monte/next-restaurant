@@ -1,4 +1,4 @@
-import style from './style.module.css';
+import style from '../../styles/input.module.css';
 
 import Image from 'next/image';
 

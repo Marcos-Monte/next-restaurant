@@ -1,7 +1,15 @@
+// Importação de componentes e Mecanismos de estilização
 import Banner from "@/Componentes/Banner";
 import { TemaProvedor } from "@/Services";
 import "@/styles/globals.css";
+
+// Importação de bibliotecas e / ou métodos
+import Image from "next/image";
 import { useState } from "react";
+
+// Importação de arquivos
+import Lua from '../../public/Assets/moon.png';
+import Sol from '../../public/Assets/sun.png';
 
 export default function App({ Component, pageProps }) {
 
@@ -15,12 +23,14 @@ export default function App({ Component, pageProps }) {
   }
 
   return (
+    // Cria um contexto para mudança te 'tema' (dark ou light mode)
     <TemaProvedor value={{ tema, trocarTema }}>
 
       <div className={`App ${tema ? escuro : claro}`}>
 
         <Banner
           funcao={trocarTema}
+          imagemBotao={tema ? <Image src={Sol} /> : <Image src={Lua} />}
         />
 
         <Component {...pageProps} />;

@@ -21,7 +21,6 @@ export const listaEntrada = (produtos) => {
     return filtrarProdutos(produtos)
 }
 
-
 //Função para buscar texto dentro de alguma propriedade do objeto de uma coleção
 export const buscarProdutos = (texto) => {
     return produtos.filter(
@@ -63,7 +62,8 @@ export const mostrarCardLista = (lista) => {
 // Importando biblioteca (react) para mudança de 'tema': createContext
 import { createContext } from 'react';
 
-// 
+// Contexto recebe uma variavel e uma função vazia
+// Esta função vai ter a logica de mudança de estado da da variavel (useState)
 export const TemaContexto = createContext(
     {
         tema: false,

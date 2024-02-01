@@ -3,7 +3,7 @@
 }
 
 .banner {
-    background-image: url('../../../public/Assets/banner.png');
+    background-image: url('../../public/Assets/banner.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -37,6 +37,16 @@
     border-radius: 25px;
     border: none;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza);
+}
+
+.botao_estilo img {
+    width: 20px;
+    height: auto;
+
 }
 
 /* Hover */

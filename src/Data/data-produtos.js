@@ -1,5 +1,5 @@
 import agua from '../../public/Img/agua.jpg';
-import aligot from "../../public/Img/aligot.jpg";
+import aligot from "../../public/Img/alligot.jpg";
 import banoffee from "../../public/Img/banoffee.png";
 import bifeAncho from "../../public/Img/bife-ancho.jpg";
 import bruschetta from "../../public/Img/bruschetta.jpg";
@@ -7,7 +7,7 @@ import capeletti from "../../public/Img/capeletti.jpg";
 import carpaccio from "../../public/Img/carpaccio.jpg";
 import cerveja from "../../public/Img/cerveja.jpg";
 import cheesecake from "../../public/Img/cheesecake.jpg";
-import ebiSpicy from "../../public/Img/ebi-spicy.jpg";
+import ebiSpicy from "../../public/Img/ebiSpicy.jpg";
 import espaguete from '../../public/Img/espaguete.jpg';
 import fileMignon from "../../public/Img/file-mignon.jpg";
 import lasanha from "../../public/Img/lasanha.jpg";

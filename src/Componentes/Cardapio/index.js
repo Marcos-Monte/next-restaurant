@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import style from './style.module.css';
+import style from '../../styles/cardapio.module.css';
 
 import Botao from '../Botao';
 import Input from '../Input';
