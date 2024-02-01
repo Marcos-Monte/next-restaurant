@@ -19,15 +19,7 @@ export default function Home() {
         <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV1aa4MXV0Co6Zvwn7vKQDgAFcsEERbT2WaQwvpdf5Gg&s" />
       </Head>
 
-
-
-      <body>
-
-        <Cardapio />
-
-      </body>
-
-
+      <Cardapio />
 
     </>
   );

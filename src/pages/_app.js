@@ -11,12 +11,12 @@ import { useState } from 'react';
 import Lua from '../../public/Assets/moon.png';
 import Sol from '../../public/Assets/sun.png';
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps, temaInicial }) {
 
   const claro = 'light';
   const escuro = 'dark';
 
-  const [tema, setTema] = useState(false);
+  const [tema, setTema] = useState(temaInicial);
 
   const trocarTema = () => {
     setTema(!tema)
@@ -45,3 +45,6 @@ export default function App({ Component, pageProps }) {
 
   );
 }
+
+
+export default App;
