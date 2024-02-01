@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 
 // Importação de bibliotecas e / ou métodos
 import Image from "next/image";
-import { useState } from "react";
+import { useState } from 'react';
 
 // Importação de arquivos
 import Lua from '../../public/Assets/moon.png';
@@ -22,20 +22,26 @@ export default function App({ Component, pageProps }) {
     setTema(!tema)
   }
 
+  const trocarImagemtema = (tema) => {
+    return tema ? Sol : Lua;
+  }
+
   return (
-    // Cria um contexto para mudança te 'tema' (dark ou light mode)
     <TemaProvedor value={{ tema, trocarTema }}>
 
       <div className={`App ${tema ? escuro : claro}`}>
 
         <Banner
           funcao={trocarTema}
-          imagemBotao={tema ? <Image src={Sol} /> : <Image src={Lua} />}
+          imagemBotao={<Image src={trocarImagemtema(tema)} />}
         />
 
         <Component {...pageProps} />;
+
       </div>
 
     </TemaProvedor>
+
+
   );
 }

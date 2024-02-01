@@ -14,16 +14,18 @@ export default function Cardapio() {
     const listaEntrada = filtrarProdutos('Entradas');
 
     const [listaProdutos, setListaProdutos] = useState(listaEntrada);
-    const [textoBusca, settextoBusca] = useState('');
+    const [textoBusca, setTextoBusca] = useState('');
+    const [botaoClicado, setBotaoClicado] = useState('Entradas');
 
 
     const handleFiltrarProdutos = (categoria) => {
         setListaProdutos(filtrarProdutos(categoria))
-        settextoBusca('')
+        setBotaoClicado(listaProdutos)
+        setTextoBusca('')
     }
 
     const handleBuscarProdutos = (textoUsuario) => {
-        settextoBusca(textoUsuario)
+        setTextoBusca(textoUsuario)
 
         setListaProdutos(limitarCaracteres(textoUsuario, listaEntrada))
 
@@ -38,7 +40,9 @@ export default function Cardapio() {
 
                     categorias.map((categoria, index) => (
 
-                        < Botao key={index}
+                        < Botao
+                            key={index}
+                            botaoClicado={botaoClicado === categoria.categoria ? 'destacado' : ''}
                             funcao={handleFiltrarProdutos}
                             categoria={categoria.categoria}
                             imagem={categoria.imagem}

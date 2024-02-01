@@ -6,7 +6,7 @@ export default function Botao(props) {
     return (
 
         <button
-            className={`${style.botao}`}
+            className={`${style.botao} ${style[props.botaoClicado]}`}
             onClick={() => props.funcao(props.categoria)}
         >
 

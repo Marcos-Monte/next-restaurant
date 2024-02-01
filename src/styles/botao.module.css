@@ -26,8 +26,7 @@
 
 /* Hover, etc */
 
-.botao:hover,
-.botao:focus {
+.botao:hover {
     background-color: var(--destaque);
 }
 

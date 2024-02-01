@@ -21,7 +21,8 @@
     color: var(--branco);
     font-weight: 600;
     font-size: 52px;
-    text-shadow: 2px -5px 15px var(--destaque);
+    text-shadow: var(--shadow);
+    ;
 }
 
 .conteudo {
