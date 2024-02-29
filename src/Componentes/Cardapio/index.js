@@ -20,7 +20,7 @@ export default function Cardapio() {
 
     const handleFiltrarProdutos = (categoria) => {
         setListaProdutos(filtrarProdutos(categoria))
-        setBotaoClicado('')
+        setBotaoClicado(categoria)
         setTextoBusca('')
     }
 
